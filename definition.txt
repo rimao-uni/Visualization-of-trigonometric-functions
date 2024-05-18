@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>SinCosTan</title>
+  </head>
+  <body>
+<script type="text/javascript" src="myprogram.js">
+
+
+</script>
+<canvas id="canvas1" width="1700" height="320""></canvas>
+
+   <form name="iform">
+数式の指定<br>
+y=f(x)=<input type="text" size="50" name="f" value="Math.sin(x) + Math.cos(x-Math.PI/4)"></input><br>
+変数xの計算範囲とグラフの表示範囲<br>
+xmin=<input type="text" size="3" name="xmin" value="-Math.PI"></input>
+xmax=<input type="text" size="3" name="xmax" value="3*Math.PI"></input>
+ymin=<input type="text" size="3" name="ymin" value="-2.2"></input>
+ymax=<input type="text" size="3" name="ymax" value="2.2"></input><br>
+遅延時間=<input type="text" size="3" name="interval" value="20">(ms)</input><br>
+<input type="button" value="実行" onclick="graph()"></input>
+</form>
+  </body>
+</html>
